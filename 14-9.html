@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        *데이터 타입과 변수
+
+        1. 자바스크립트 식별자
+        - 식별자:자바스크립트 개발자가 자바스크립트 프로그램의 변수, 상수(리터럴), 함수에 붙이는 이름
+        - 규칙
+            : 첫 번째 문자 - 알파벳(A-Z, a-z), 언더스코어(_), $ 문자만 사용 가능
+            : 두 번째 이상 문장 - 알파벳, 언터스코어(_), 0-9, $ 사용 가능
+            : 대소문자 구분 - myHome와 myhome은 다른 변수 
+
+        ex) 6variable(x), _code(o), @calc(x)
+
+        - 문장 구분
+        : 문장 -> 자바스크립트 프로그램의 기본 단위
+        : 세미콜론(;)으로 문장과 문장을 구분
+
+        ex) i=i+1 (o) // 한 줄에 한 문장 있는 경우 세미콜론 생략 가능
+            i=i+1; (o) 
+            n=n-1; p=p-1 (o)
+
+        - 주석문
+        : 설명이나 메모 목적으로 삽입한 텍스트
+        : 사용방법
+        ex) 1. // 한 라인 주석
+            2. /*
+                    여러라인 주석
+                */
+
+        - 데이터타입
+        : 자바스크립트 언어로 다룰 수 있는 데이터의 종류
+        : 종류
+        1. 숫자 타입 : 32, 3.14
+        2. 논리 타입 : true, false
+        3. 문자열 타입 : '좋은 세상', "a", "365", "2+4"
+        4. 객체 레퍼런스 타입 : 객체를 가리킴, c언어의 포인터와 유사
+        5. null : 값이 없음을 표시하는 특수 키워드, Null, NULL과는 다름
+
+        - 변수
+        : 자바스크립트 코드가 실행 중에 데잍터를 저장하는 공간의 이름
+
+        1. 변수 선언
+            - var 키워드로 변수를 선언
+                ex) var score; // 변수 score 선언
+                    var year, month, day // 변수 3개 선언
+
+            - var 키워드 없이 변수를 선언
+                ex) age = 21; // var없이 변수 age를 선언하고 21 초기화
+
+                ex) var age; 
+                    age = 21;
+                
+                ex) var age = age = 21;
+                ex) int age=21; (x)
+            
+        : 지역변수와 전역변수 
+            : 지역변수 
+                함수 안에서 var 키워드로 선언,
+                선언된 함수 내에서만 사용 가능
+            : 전역변수
+                함수 밖에서 선언되거나 함수 내에서 var키워드 없이 선언
+                프로그램에서 사용 가능
+
+        ex) 
+        <script>
+            var x;      //전역변수 x 선언
+            function f()
+            {
+                var y;  //지역변수 y 선언
+                x=10;   //전역변수 x에 10 저장
+                y=10;   //지역변수 y에 10 저장
+                z=10;   //새로운 전역변수 z 선언
+            }
+        </script>
+    
+        : this로 전역변수 접근
+        => 지역변수와 전역변수의 이름이 같을 때, this를 이용하면
+        전역변수에 접근할 수 있다.
+
+        ex) 
+            <script>
+                var x;  //전역변수
+
+                function()
+                {
+                    var x;  //지역변수
+                    x=1;    //지역변수 x에 1 저장
+                    this.x=100;     //전역변수 x에 100을 저장
+                }
+            </script>
+
+        - 상수
+        : 변수가 데이터 저장공간의 이름이라면, 상수(literal)는 데이터 값 그 자체이다.
+
+            1. 정수
+            ex) var n = 015;
+                var m = 15;
+            2. 실수
+            ex) var height = 0.124; // 소수형
+                var height = 124E-3; // 지수형
+            3. 논리
+            ex) var condition = true;   //참
+                var condition = false;  //거짓
+            4. 기타 
+            ex) var ret = null; //null, 값이 없음을 뜻함
+                var ret = parseInt("abc");  // NaN, 수가 아님을 뜻함
+                var ret = parseInt("123");
+
+        - 문자열 내 문자열
+            
+            ex) <p onmouseover = "document.body.style.color = 'brown' ">
+
+
+    -->
+
+    <script>
+        var x=100;  //전역변수
+
+        function f()
+        {
+            var x=1; //지역변수
+            document.write("지역변수 x = " + x);
+            document.write("<br>");
+            document.write("전역변수 x = "+ this.x);
+
+        }
+        f();    //함수 f() 호출
+    </script>
+    <p onmouseover = "document.body.style.color = 'blue' "> 웹 기초 프로그래밍</p>
+
+  
+</body>
+</html>

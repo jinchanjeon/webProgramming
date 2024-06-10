@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 프로퍼티 : 인라인, 인라인블록, 블록</title>
+    <style>
+        div{
+            border: 2px solid yellowgreen;
+            color: blue;
+            background: aliceblue;
+        }
+
+        span{
+            border: 3px dotted red;
+            background: yellow;
+        }   
+    </style>
+</head>
+<body>
+    <!--
+        *CSS3 고급활용*
+        - 배치
+        - 리스트 꾸미기
+        - 표 꾸미기
+        - 폼 꾸미기
+        - 애니메이션 등 동적 변화 만들기
+
+        1. 배치(positioning)
+        - HTML 태그를 브라우저의 특정 위치에 고정 출력시키거나
+        - 스크롤 바를 굴려도 항상 그 자리에 보이도록 할 수 있고
+        - 경우에 따라서 보이지 않게 숨길 수 있고,
+        - HTML 태그가 출력되는 위치를 지정할 수 있다.
+
+        - 배치와 관련된 CSS3 프로퍼티
+            1. display
+            2. position
+            3. left, right, top, bottom
+            4. float
+            5. z-index
+            6. visibility
+            7. overflow
+
+        * 블록 박스와 인라인 박스*
+        - HTML 태그는 블록태그와 인라인 태그로 구분
+            : 블록태그 사례 : <div> , <p>, <ul>, <hl>
+            : 인라인태그 사례 : <span>, <a>, <img>
+        
+        - 블록박스: 블록태그를 사용하고 브라우저에서 특정 영역이나 위치를 차지한다.
+                ex) <div> Div </div>
+
+        - 인라인박스: 인라인태그를 사용하고 브라우저에서 영역 내부에 위치한다.
+                ex) <div> Div 내 <span> span </span>과 <a href=""> a </a> 입니다.</div>
+
+        1. 박스의 유형 제어, display
+        - display 프로퍼티 유형
+            1. 블록박스 - display : block
+            --------------------------------------------------
+            |block                                           |
+            |                                                |
+            |     block 박스                                 |
+            |     block 박스                                 |
+            |                                                |
+            --------------------------------------------------
+
+
+            2. 인라인박스 - display : inline
+            --------------------------------------------------
+            |block                                           |
+            |                                                |
+            |      inline 박스      inline 박스              |
+            |                                               |
+            |                                               |
+            --------------------------------------------------
+
+            3. 인라인 블록박스 - display : inline-block
+            --------------------------------------------------
+            |block                                           |
+            |                                                |
+            |      inline 블록박스      inline 블록박스       |
+            |                                                |
+            |                                                |
+            --------------------------------------------------
+
+        - CSS3의 3가지 박스 유형 비교
+        =============================================================================
+        블록박스                     인라인박스                         인라인블록박스
+        (display : block)           (display : inline)                  (display : inline-block)
+        =============================================================================
+        항상 세 라인에서 시작       새 라인에서 시작하지 못함             새 라인에서 시작 못함
+                                    라인 인(inline)에 있음              라인 인(inline)에 있음
+
+        블록박스 내에서만 배치      모든 박스 내 배치 가능              모든 박스 내에 배치 가능
+
+        옆에 다른 요소 배치 불가능  옆에 다른 요소 배치 가능             옆에 다른 요소 배치 가능        
+
+        width와 height의 크기 조절  width와 height의 크기 조절 불가능   width와 height의 크기 조절
+
+        padding, border, margin 조절가능    margin-top, margin-bottom 조절 불가능  padding, border, margin 조절가능 
+
+    
+    -->
+
+    <h3> 인라인, 인라인블록, 블록</h3>
+    <hr>
+
+    나는 <div style="display:none">div(none) </div>입니다. <br><br>
+    나는 <div style="display:inline">div(inline) </div>입니다. <br><br>
+    나는 <div style="display:block">div(block) </div>입니다. <br><br>
+    나는 <div style="display:inline-block">div(inline-block) </div>입니다. <br><br>
+    나는 <div>span<span style="display: block">(block) </span>입니다.</div> <br><br>
+    나는 <div>span<span style="display: inline">inline </span>입니다.</div>
+
+</body>
+</html>

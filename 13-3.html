@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .e-resize{
+            cursor: e-resize;
+        }
+        .ne-resize{
+            cursor: ne-resize;
+        }
+        .zoom-in{
+            cursor:zoom-in;
+        }
+        .zoom-out{
+            cursor: zoom-out;
+        }
+        .wait{
+            cursor: wait;
+        }
+    </style>
+   
+</head>
+<body>
+    <!--
+        * 시각적 효과*
+        1. 텍스트 그림자
+        2. 박스 그림자
+        3. 마우스 커서 제어
+
+        **3. 마우스 그림자
+        - 마우스 커서 제어 효과를 주기 위한 방법: cursor 프로퍼티 사용
+        - cursor 프로퍼티 사용 방법 
+
+        ex)cursor : value
+
+        -value: 마우스 커서 모양을 나타낸 값으로 
+        - value 값 : auto, crosshair, default, pointer, move, copy, help, progress,
+                    text, wait, none, zoom-in, zoom-out, e-resize, ne-resize, nw-resize,
+                    n-resize, se-resize, s-resize, w-resize, rui 중 하나 지정됨
+
+        - h-shadow, v-shadow : 원본 텍스트와 그림자 텍스트 사이의 수평|수직 거리(필수)
+        - blur-radius : 흐릿한 그림자를 만드는 효과로 흐릿하게 번지는 길이(선택)
+        - color : 그림자 색
+        - none : 그림자 효과 없음
+        - spread-radius : 그림자 크기(선택, 디폴트 0)
+        - insert : 음각 박스로 보이게 박스 삼단 안쪽(왼쪽과 위쪽)에 그림자 형성
+
+    -->
+
+    <h3> 마우스 커서 </h3>
+    아래에 마우스를 올려보세요. 커서가 변합니다.
+    <hr>
+  
+    <p style="cursor: crosshair">십자 모양 커서</p>
+    <p style="cursor: help">도움말 모양 커서</p>
+    <p style="cursor: pointer">포인터 모양 커서</p>
+    <p style="cursor: progress">프로그램 실행 중 모양 커서</p>
+    <p style="cursor: n-resize">상하 크기 조절 모양 커서</p>
+    <p class="e-resize"> e-resize 좌우 크기 조절 모양</p>
+    <p class="ne-resize"> ne-resize 대각선 크기 조절 모양 </p>
+    <p class="zoom-in"> zoom-in</p>
+    <p class="zoom-out"> zoom-out</p>
+    <p class="wait"> wait</p>
+    <p style = "cursor: auto">auto</p> 
+    <p style = "cursor: default">default</p> 
+</body>
+</html>

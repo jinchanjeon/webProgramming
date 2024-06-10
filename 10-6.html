@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        1. CSS3 규칙
+        1.1 CSS3 스타일로 부모 태그로부터 상속된다.
+
+        <div>
+            <p style>       <= 부모 태그
+                <em style>  <= 자식 태그
+                    <h1 style>
+                </em>
+            </p>
+        </div>  
+
+        1.2 스타일 합치기(cascading, 캐스케이딩)와 오버라이딩(overriding)
+    
+
+    -->
+
+    <p style = "color:green"> 자식 태그는 부모의 스타일을 <em style = "font-size: 25px;">상속</em>받는다. </p>
+
+    <p style = "color:green"> 자식 태그는 부모의 스타일을 
+        <!--
+            <em style = "font-size: 25px;">상속</em>받는다. </p>
+        -->
+        <em>상속</em>받는다. </p>
+
+    <p style = "color:green"> 자식 태그는 부모의 스타일을 </p>
+    <em> 상속</em>
+    <p style="color:blueviolet;">
+    받는다.</p>
+
+</body>
+</html>

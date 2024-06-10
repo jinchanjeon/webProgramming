@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+                background : goldenrod;
+                padding : 10px 10px 10px 50px;
+                list-style-image: url("marker.png");
+
+        }
+
+        ul li {
+            background : greenyellow;
+            margin-bottom : 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        2. 리스트 꾸미기
+        - 리스트를 꾸미는 CSS3 프로퍼티들
+        ===========================================================================================    
+        프로퍼티                        설명
+        ===========================================================================================
+        list-style-type         아이템 마커 타입 지정    
+        list-style-image        아이템 마커 이미지 지정
+        list-style-position     아이템 마커의 출력 위치 지정(아이템 영역 내 혹은 영역 바깥)
+        list-style              앞의 3개의 프로퍼티 값을 한번에 지정하는 단축 프로퍼티
+
+        - 리스트와 아이템의 배경
+
+        ex)  ul {
+                background : glodenrod;
+                padding : 10px 10px 10px 50px;
+        }
+
+        ul li {
+            background : greenyellow;
+            margin-bottom : 5px;
+        }
+
+        - 마커의 위치, list-style-position
+        : 마커의 위치를 지정할 때 사용
+        
+        list-style-position : inside | outside
+
+        - 마커 종류 : list-style-type
+          : 마커의 종류를 지정할 때 사용
+
+        list-style-type : disc | ormenion | circle | cjk-ideographic | decimol | georgion |
+                            lower-alpha | lower-roman | upper-roman | squore | decial | none
+
+       - 이미지 마커, list-style-image
+       : 공통 이미지를 모든 아이템 마커로 적용할 수 있다.
+       : 아이템마다 다른 이미지를 달 수 도 있다.                             
+     -->
+
+    <h3> <center> 커피 메뉴 </center></h3> 
+
+    <hr> 
+
+    <ul>
+        <li> Espresso </li>
+        <li> Cappuccino </li>
+        <li> Cafe Latte </li>
+
+    </ul>   
+    
+</body>
+</html>

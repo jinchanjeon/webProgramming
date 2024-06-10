@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        1. CSS 레벨 1, 2의 선택자(셀렉터)
+    =====================================================================================
+    구분(종류)          패턴           사용 예                 설명
+    =====================================================================================
+    전체 선택자         *               *                   모든 요소
+    
+    타입 연산자         요소(html 태그)            h1                  모든 <h1>태그 요소
+                        요소, 요소      div, h1             모든 <div>와
+                                                            모든 <h1> 태그 요소
+
+    클래스 선택자       .class          .abc                 class = "abc"를 가지는 모든 태그 요소                                                           
+
+    아이디 선택자       #d              #def                id = "def"를 가지는 태그 요소
+
+    속성 선택자         [속성]          [title]             title 속성을 가지는 모든 요소
+
+    자손 결합자         요소  요소      p  h3               <p>태그에 포함되어 있는 <h3>태그 요소
+
+                                        <p>
+                                            <h3>
+                                                <p>
+                                                    <h3>
+                                                    </h3>
+                                                </p>
+                                            </h3>
+                                        </p>
+                                        <h3>
+                                        </h3>
+                                        
+    
+    자식 결합자         요소 > 요소     p > h3              <p>태그를 부모로 가지는 모든 <h3>태그 요소
+
+    인접 형제 결합자     요소 + 요소    p + h3              <p>태그 바로 다음에 나오는 형제 <h3> 태그 요소
+        
+    순서 의사 요소      요소: first-letter      h2:first-letter     모든 <h2> 태그의 첫 글자
+                            ex) <h2> how are you? </h2>  -> h
+                        요소: first-line       h2:first-line       모든 <h2> 태그의 첫 라인
+                            ex) <h2> how are <br> you? </h2>  -> how are    
+                        요소: first-before     h2: first-before    모든 <h2> 태그의 내용 전
+                            ex) how <h2> are
+                                <br>
+                                you? </h2>
+                        요소: first-after      h2:first-after      모든 <h2> 태그 내용 후
+                            ex) how <h2> are </h2>
+                                you?
+                        
+    구조 의사 클래스     요소: first-child      p:first-child       부모 태그의 첫번째 자식인 <p>태그 요소 모두
+                            ex) <div> 
+                                    <p>     <--
+                                    <h3>
+                                    
+                                </div>
+
+    링크 의사 클래스     요소: link             a:link              클릭하지 않은 모든 링크
+                        요소: visited          a:visit             클릭한 모든 링크
+
+    동적 의사 클래스    요소: active            a:active            클릭할 때의 링크
+                        요소: hover             a:hover             마우스 포인터가 위에 있는 링크
+                        요소: focus             a:focus             포커스를 가진 <input> 태그 요소
+
+    언어 의사 클래스    요소: lang(language)    p:lang(en)          lang="en"을 가진 모든 <p>태그 요소
+
+    
+    2. CSS3에 추가된 선택자
+=====================================================================================
+    구분(종류)          패턴           사용 예                 설명
+=====================================================================================   
+속성 선택자           [속성 ^= 값]     [title ^= tree]      title속성값이 tree로 시작하는 모든 태그 요소
+
+                    [속성 $=값]       [title $= tree]      title속성값이 tree로 끝나는 모든 요소
+
+                    [속성 *= 값]      [title *= tree]       title속성값이 tree를 포함하는 모든 요소
+    
+구조 의사 클래스     : root            : root               문서의 루트 요소
+                    요소 : last-child       p:last-child    마지막 자식인 <p> 요소
+                    요소 : nth-child(n)     p:nth-child(n)  n번째 자식인 <p> 요소
+                    요소 : nth-last-child(n)    p:nth-last-child(n)     끝에서 n번째 자식인 <p> 요소
+                    
+타겟 의사 클래스     요소:target       *:target           활성화된 링크의 타겟 앵커
+
+UI 요소 상태        요소:enable       input:enabled       활성화된 <input> 태그 요소
+                    요소:disable      input:disabled     비활성화된 <input> 태그 요소
+
+의사 클래스         요소:checked      input:checked         선택된 <input> 태그 요소
+
+부정 의사 클래스    : not(요소)       :not(p)               <p> 태그 요소 이외의 모든 요소
+
+    -->
+
+    
+
+</body>
+</html>

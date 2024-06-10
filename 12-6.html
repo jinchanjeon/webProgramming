@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size:30px;
+        }
+        h3, li{
+            color:darkblue;
+        }
+        .warning {
+   
+            color:darkorange;
+        }
+
+        body.main{
+            background-color:antiquewhite;
+        }
+
+        #list{
+            background-color: rgb(25, 157, 63);
+        }
+
+        div > strong {
+            color:yellowgreen;
+        }
+
+        ul h2 {
+            color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+       4. 셀렉터 조합하기
+       - 정의 : 2개이상의 셀렉터를 조합하면 태그를 구체적으로 지정
+       - 방법 : 여러가지 방법은 있으나 가장 대표적인 방법 2가지
+            : 자식 셀렉터(child selecter)
+                -정의: 부모 자식 관계인 두 셀렉터를 '>' 기호로 조합한 형태
+                - ex) div > strong {color : dodgerblue;}
+                      div >div > strong {color:darkgreen;}
+
+            : 자손 셀렉터(descendent selecter)
+                -정의: 자손 관계인 2개 이상의 태그를 나열한 형태
+                - ex) <ul> 태그의 자손인 <strong> 태그에 적용하는 스타일 시트
+                    ul strong {
+                        color : dodgerblue;
+                    }
+    -->
+
+    <center>
+        <p> 태그 이름 셀렉터</p>
+    </center>
+
+    <br>
+    <br>
+
+    <h3> web programming </h3>
+    <hr>
+
+    <div>
+        <div>
+            1학기 <strong>학습 내용</strong>
+        </div>
+        <ul id="list">
+            <li>
+                html5
+            </li>
+            <li><h2>
+                css3</h2>
+            </li>
+            <li>
+                java script
+            </li>
+        </ul>
+
+        <div class="warning">
+            <strong>60점 이하는 F학점입니다. </strong>
+        </div>
+    </div>
+
+</body>
+</html>

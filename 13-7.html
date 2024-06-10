@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        #fixed{
+            position : fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: red;
+            color: white;
+        }
+
+        #topfixed{
+            position : fixed;
+            top: 100px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: yellow;
+            color: darkblue;
+        }
+
+        #leftfixed{
+            position : fixed;
+            bottom: 10px;
+            left: 10px;
+            width: 100px;
+            padding: 5px;
+            background: cornflowerblue;
+            color: whitesmoke;
+        }
+    </Style>
+</head>
+<body>
+    <!--
+        - 고정 배치
+        : position : fixed
+        : left, top, right, bottom 프로퍼티의 값으로 뷰포트의 특정 위치에 고정
+        : 뷰포트(viewport) => 브라우저에 보이는 영역
+    -->
+
+    <h3> Merry Christmas! </h3>
+    <hr>
+    <img src="animal.jpg" width="300" height="300" alt="크리스마스 트리">
+    <div id="topfixed"> 메리크리스마스 </div>
+    <div id="leftfixed"> 즐거운 날입니다. </div>
+    <div id="fixed"> 예수님이 탄생하셨습니다. </div>
+
+
+</body>
+</html>

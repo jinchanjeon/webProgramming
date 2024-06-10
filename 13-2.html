@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+       .redBox{
+           box-shadow : 10px 10px red;
+       }
+       .blurBox{
+           box-shadow : 10px 10px 5px skyblue;
+       }
+       .multiEffect{
+           box-shadow: 2px 2px 2px black,
+                        0 0 25px blue,
+                        0 0 5px darkblue;
+       }
+
+       div{
+           width: 150px;
+           height: 70px;
+           padding : 10px;
+           border: 10px solid lightgray;
+           background-image : url(animal.jpg);
+           background-size: 150px 100px;
+           background-repeat: no-repeat;
+       }
+
+    </Style>
+</head>
+<body>
+    <!--
+        * 시각적 효과*
+        1. 텍스트 그림자
+        2. 박스 그림자
+        3. 마우스 커서 제어
+
+        **2. 박스 그림자
+        - 박스 그림자 효과를 주기 위한 방법: box-shadow 프로퍼티 사용
+        - box-shadow 프로퍼티 사용 방법 
+
+        ex) box-shadow : h-shadow v-shadow blur-radius color  spread-radius| none insert
+
+        - h-shadow, v-shadow : 원본 텍스트와 그림자 텍스트 사이의 수평|수직 거리(필수)
+        - blur-radius : 흐릿한 그림자를 만드는 효과로 흐릿하게 번지는 길이(선택)
+        - color : 그림자 색
+        - none : 그림자 효과 없음
+        - spread-radius : 그림자 크기(선택, 디폴트 0)
+        - insert : 음각 박스로 보이게 박스 삼단 안쪽(왼쪽과 위쪽)에 그림자 형성
+
+    -->
+
+    <h3> 박스 그림자 만들기</h3>
+    <hr>
+  
+    <div class="redBox"> 여러분들과 함께</div>
+    <br><br>
+    <div class="blurBox"> 여러분들과 함께</div>
+    <br><br>
+    <div class="multiEffect">여러분들과 함께</div>
+
+
+</body>
+</html>

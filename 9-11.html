@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        * 멀티미디어 활용
+        2. 배경음악
+        <embed> 태그
+
+        -형식: <embed src="사운드 파일의 url" 
+                autostart="true(기본)|false" : 페이지 접속과 동시에 재생
+                hidden ="ture|false(기본)" : 플레이어 숨김 여부
+                loop="true|false"           : 무한 반복 여부(기본)
+                volume = "수"               : 볼륨 0(최소) - 100(최대)
+                >
+
+        <bgsound> 태그
+        - 형식: <bgsound src ="사운드 파일의 url"
+                    loop="수|infinite(-1)"     : 반복 횟수 또는 무한 반복(기본)
+                    volume = "수"           : 볼륨 -6000(최소) - 0(최대, 기본)
+
+                    >
+    -->
+
+    <center>
+        <h2> 웹 페이지에 배경음악 삽입</h2>
+        <hr>
+        <br>
+        <bgsound src ="music.wav"
+                    loop="infinite"    
+                    volume = "0"  
+                    >
+    </center>
+</body>
+</html>

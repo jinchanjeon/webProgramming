@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        자바스크립트 다이얼로그: 사용자 입력 및 메시지 출력
+
+        1. 프롬프트 다이얼로그, prompt("메시지", "디폴트 입력값")
+        
+            var res = prompt("이름을 입력해주세요", "황기태");
+            if(res == null)
+            {
+                documnet.write("아무 내용도 입력되지 않았습니다.");
+
+            }
+            else
+            {
+                document.write("입력된 내용은 홍길동입니다.");
+
+            }
+
+        2. 확인 다이얼로그, confirm("메시지 ");
+
+            var res = confirm("전송할까요? ");
+            if(res == true)
+            {
+                documnet.write("전송");
+
+            }
+            else
+            {
+                document.write("전송 불가");
+
+            }
+
+        3. 경고 다이얼로그, alert("메시지");
+
+            alert("클릭하였습니다.");
+
+
+    -->
+
+    <script>
+          var res = prompt("이름을 입력해주세요", "황기태");
+            if(res == "홍길동")
+            {
+                documnet.write("홍길동입니다.");
+
+            }
+            else
+            {
+                document.write("입력된 내용은 홍길동이 아닙니다.");
+
+            }
+    </script>
+
+    <script>
+         var res = confirm("전송할까요? ");
+            if(res == true)
+            {
+                documnet.write("전송");
+
+            }
+            else
+            {
+                document.write("전송 불가");
+
+            }
+    </script>
+
+    <script>
+        alert("클릭하였습니다.");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function over(obj)
+    {
+        obj.src="apple.png";
+        
+    }
+    function out(obj)
+    {
+        obj.src="banana.png";
+    }
+    </script>
+</head>
+<body>
+    <!--
+        3.2 <script> </script> 태그에 자바스크립 코드 작성
+        - <script> </script> 는 <head> </head>나 <body> </body> 내 어디든 들어갈 수 있다.
+        - 웹 페이지 내에 <script> </script>를 여러 번 작성할 수 있다.
+
+        => 태그와 함께 이벤트 리스너 속성을 사용하도록 할 경우에는 함수형태로 만들어진다.
+
+    -->
+
+    <img src="apple.png" alt="이미지" onmouseover="over(this)" onmouseout="out(this)">
+
+</body>
+</html>

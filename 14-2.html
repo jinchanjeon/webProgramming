@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        3.1 HTML 태그의 이벤트 리스너 속성에 자바스크립트 코드 작성
+
+        ex) <img> 태그의 onclick 이벤트 리스너 속성에 자바스크립트 코드를 작성하는 사례
+
+        <img src="apple.png" alt="img" onclick="this.src='banana.png'">
+
+        - onclick : onclick 이벤트 리스너 속성
+        - "this.src='banana.png'" : 자바스크립트 코드(이미지를 banana.png로 교체)
+    -->
+
+    <img src="apple.png" alt="이미지" onclick="this.src='banana.png'">
+
+    <br><br><br>
+    <img src="apple.png" alt="이미지" onmouseover="this.src='banana.png'" onmouseout="this.src='apple.png'">
+</body>
+</html>
